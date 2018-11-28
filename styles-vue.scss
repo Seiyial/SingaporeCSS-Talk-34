@@ -1,0 +1,43 @@
+#app-root.login-page {
+	background-color: darkslateblue;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	color: darken(white, 10%);
+}
+
+.login-container {
+	margin-top: 2em;
+	width: 50vw;
+	max-width: 500px;
+	min-height: 5em;
+	border-radius: 2em;
+	border: 1px solid darken(white, 10%);
+	padding: 2em;
+
+	color: darken(white, 10%);
+}
+
+.question-enter-active {
+  transition: all .3s ease-out;
+  transition-delay: 0.8s;
+}
+.question-leave-active {
+  transition: all .8s ease-out;
+}
+.question-enter, .question-leave-to {
+  transform: translateX(30vw);
+  opacity: 0;
+}
+
+.answers-container div {
+	font-weight: bold;
+	text-decoration: underline;
+	transition: color 0.2s ease-out;
+	cursor: pointer;
+	padding: 5px;
+
+	&:hover {
+		color: darken(lime, 10%);
+	}
+}

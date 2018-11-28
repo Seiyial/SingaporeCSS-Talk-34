@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>React Demo</title>
+	</head>
+	<body>
+		<div id="app-root" class="login-page">
+			<h1>Welcome to my humble abode</h1>
+			<div class="login-container">
+				<div class="question-container">
+					<transition appear name='question' mode='out-in'>
+						<section id='Q1' v-if="showQ1">
+							<p>What is my birthday?</p>
+							<div class="answers-container">
+								<div>7 July 2000</div>
+								<div>10 March 1998</div>
+								<div @click="showQ1 = false; showQ2 = true">9 August 1965</div>
+							</div>
+						</section>
+					</transition>
+					<transition name='question' mode='out-in'>
+						<section id='Q2' v-if="showQ2">
+							<p>What is the MRT station beside Changi Airport?</p>
+							<div class="answers-container">
+								<div @click="showQ2 = false; showQ3 = true">Expo</div>
+								<div>Budget Terminal</div>
+								<div>Pasir Ris</div>
+							</div>
+						</section>
+					</transition>
+					<transition name='question' mode='out-in'>
+						<section id='Q3' v-if="showQ3">
+							<p>I'm not even gonna tell you the question :P</p>
+							<div class="answers-container">
+								<div>One</div>
+								<div @click="showQ3 = false; showLogin = true">Two</div>
+								<div>Three</div>
+							</div>
+						</section>
+					</transition>
+					<transition name='question'>
+						<section id='login' v-if='showLogin'>
+							<p>Welcome!!</p>
+							<a href='#'>Login</a>
+						</section>
+					</transition>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+	<script src="./app-vue.js"></script>
+	<script>
+		const vm = new Vue({
+			el: '#app-root',
+			data: {
+				showQ1: false,
+				showQ2: false,
+				showQ3: false,
+				showLogin: false
+			},
+			mounted: function() {
+				this.showQ1 = true
+			}
+		})
+	</script>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>

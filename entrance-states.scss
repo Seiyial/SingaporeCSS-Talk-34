@@ -1,0 +1,27 @@
+.slideInRight {
+
+}
+
+.slideInRight-enter {
+ // opacity: 0.01;
+}
+
+.slideInRight-enter-active {
+	// transition: opacity 0.3s ease-out;
+	// opacity: 1;
+	animation: 0.5s bounceInRight both;
+}
+
+@keyframes bounceInRight {
+	0% { transform: translateX(100vw); }
+	90% { transform: translateX(-20vw); }
+	100% { transform: none; }
+}
+
+.slideInRight-exit {
+
+}
+
+.slideInRight-exit-active {
+
+}
