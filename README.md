@@ -10,18 +10,18 @@
 
 ### For Record, Presentation Contents:-
 
-1. `Main.pptx`: See Google Slides / sayhao@seiyianreal.ms
+1. `$ open Main.pptx`
 
-2. `MazeGame.pptx`
+2. `$ open MazeGame.pptx`
 
-3. Open these links for CodePens:
+3. Visit these links for CodePens:
 
-4. [CodePen: Animating Buttons (Transitions)](https://codepen.io/Seiyial/pen/NELmEd); note there's the clickable text at the bottom right
+   [CodePen: Animating Buttons (Transitions)](https://codepen.io/Seiyial/pen/NELmEd); note there's the clickable text at the bottom right
 
    [CodePen: Entrance Exit Procs I](https://codepen.io/Seiyial/pen/QJyzwj)
 
    [CodePen: Entrance Exit Procs II](https://codepen.io/Seiyial/pen/NELmEd)
 
-5. `$ yarn && yarn run parcel index-react.html` , then open localhost:1234 to preview React demo
+4. `$ yarn && yarn run parcel index-react.html` , then open localhost:1234 to preview React demo
 
-6. `$ yarn && yarn run parcel index-vue.html`, then open or refresh localhost:1234 to preview Vue demo
+5. `$ yarn && yarn run parcel index-vue.html`, then open or refresh localhost:1234 to preview Vue demo
